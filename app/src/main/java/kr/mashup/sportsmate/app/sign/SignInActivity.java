@@ -3,18 +3,16 @@ package kr.mashup.sportsmate.app.sign;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.bigstark.cycler.CyclerActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import kr.mashup.sportsmate.R;
-import kr.mashup.sportsmate.SportsMateApplication;
 import kr.mashup.sportsmate.app.home.HomeActivity;
 import kr.mashup.sportsmate.model.UserModel;
 import kr.mashup.sportsmate.model.command.SignInCommand;
@@ -30,6 +28,8 @@ import retrofit2.Response;
  */
 
 public class SignInActivity extends CyclerActivity {
+    @BindView(R.id.tv_title)
+    TextView tvTitle;
     @BindView(R.id.email) EditText userEmail;
     @BindView(R.id.password) EditText userPassword;
     @BindView(R.id.sign_in_btn) Button signInBtn;
@@ -41,6 +41,7 @@ public class SignInActivity extends CyclerActivity {
         setContentView(R.layout.sign_in);
         setUnbinder(ButterKnife.bind(this));
 
+        tvTitle.setText("스메");
         signInBtn.setOnClickListener(listener);
         signUpBtn.setOnClickListener(listener);
     }
