@@ -1,6 +1,7 @@
 package kr.mashup.sportsmate.rest.user;
 
 import kr.mashup.sportsmate.model.UserModel;
+import kr.mashup.sportsmate.model.command.PushTokenCommand;
 import kr.mashup.sportsmate.model.command.SignInCommand;
 import kr.mashup.sportsmate.model.command.SignUpCommand;
 import retrofit2.Call;
@@ -25,5 +26,9 @@ public interface UserService {
 
     @GET("user/{userId}")
     Call<UserModel> getUser(@Path("userId") int userId);
+
+
+    @POST("user/pushToken")
+    Call<UserModel> sendPushToken(@Body PushTokenCommand command);
 
 }
