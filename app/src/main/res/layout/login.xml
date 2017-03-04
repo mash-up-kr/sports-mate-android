@@ -8,22 +8,23 @@
     tools:context="kr.mashup.sportsmate.app.sign.LoginActivity">
 
     <ImageView
-        android:layout_width="280px"
-        android:layout_height="314px"
-        android:layout_weight="1.2"
+        android:layout_width="104.6dp"
+        android:layout_height="93.3dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginBottom="110dp"
         android:src="@drawable/login_logo"
         android:layout_gravity="center" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.8"
         android:orientation="vertical"
         android:background="#3559AD">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="72px"
+            android:paddingTop="57.3dp"
+            android:paddingBottom="20dp"
             android:gravity="center"
             android:textColor="#ffffff"
             android:textSize="19.6dp"
@@ -33,14 +34,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
             android:textColor="#ffffff"
-            android:textSize="11.3dp"
+            android:textSize="14.6dp"
             android:text="새로운 운동 친구와"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
             android:textSize="14.6dp"
             android:textColor="#ffffff"
             android:text="멋진 팀을 만들고 싶다면"/>
@@ -49,8 +52,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:paddingBottom="48dp"
+            android:textSize="14.6dp"
             android:textColor="#ffffff"
             android:text="가까운 동네, 건강한 사람들의 친구 찾기!"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="48dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login_box"
+                android:text="회원가입"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="로그인"/>
+        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>
