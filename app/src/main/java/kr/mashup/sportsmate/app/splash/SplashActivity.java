@@ -12,6 +12,8 @@ import teaspoon.annotations.OnUi;
 
 public class SplashActivity extends CyclerActivity {
 
+    boolean isFirst = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,5 +37,14 @@ public class SplashActivity extends CyclerActivity {
     void startHomeActivity() {
         Intent intent = new Intent(Defines.INTENT_HOME_ACTIVITY);
         startActivity(intent);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(isFirst)
+            finish();
+
+        isFirst = true;
     }
 }

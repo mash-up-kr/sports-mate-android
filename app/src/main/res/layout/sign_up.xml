@@ -12,15 +12,17 @@
     tools:context="kr.mashup.sportsmate.app.sign.SignUpActivity">
 
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:textSize="25dp"
-        android:textColor="#000000"
-        android:text="회원가입"/>
+        android:textColor="#3559ad"
+        android:text="회원가입"
+        android:textStyle="bold"/>
 
     <EditText
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="140dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
@@ -56,7 +58,7 @@
     <Button
         android:layout_width="116dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_gravity="center_horizontal"
