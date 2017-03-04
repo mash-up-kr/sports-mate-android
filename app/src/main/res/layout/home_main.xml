@@ -33,7 +33,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="106px"
                     android:layout_marginRight="106px"
-                    android:layout_marginTop="486px"
+                    android:layout_marginTop="120dp"
                     android:background="#ffffff"
                     android:orientation="vertical"
                     android:paddingBottom="58px"

@@ -50,6 +50,7 @@ public class HomeActivity extends AppCompatActivity {
         drawerItem[2] = new DataModel("공지사항");
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         DrawerItemCustomAdapter adapter = new DrawerItemCustomAdapter(this, R.layout.list_view_item_row, drawerItem);
         mDrawerList.setAdapter(adapter);
