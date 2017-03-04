@@ -5,13 +5,13 @@
 
     <EditText
         android:id="@+id/email"
-        android:text="email:"
+        android:hint="email:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/nickname"
-        android:text="nickname:"
+        android:hint="nickname:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

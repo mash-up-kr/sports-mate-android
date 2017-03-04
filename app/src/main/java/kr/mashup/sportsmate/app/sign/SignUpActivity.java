@@ -86,7 +86,7 @@ public class SignUpActivity extends CyclerActivity {
             focusView.requestFocus();
         } else {
             // Show a progress spinner, and kick off a background task to
-            // perform the user login attempt.
+            // perform the user sign up attempt.
             signUpNext(email, nickName, password);
         }
     }
