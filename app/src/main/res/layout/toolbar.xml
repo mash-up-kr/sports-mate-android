@@ -6,4 +6,25 @@
     android:minHeight="?attr/actionBarSize"
     android:background="@android:color/transparent"
     local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-    local:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스메"
+        android:layout_gravity="center"
+        android:id="@+id/toolbar_title"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#ffffff"/>
+
+    <ImageButton
+        android:layout_width="58px"
+        android:layout_height="62px"
+        android:src="@drawable/mainicon_bell"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"/>
+
+</android.support.v7.widget.Toolbar>

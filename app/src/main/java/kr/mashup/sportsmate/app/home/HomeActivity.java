@@ -11,7 +11,10 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
+
+import com.bumptech.glide.Glide;
 
 import kr.mashup.sportsmate.R;
 
@@ -21,14 +24,18 @@ public class HomeActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     Toolbar toolbar;
+    ImageView imageView_background;
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
     android.support.v7.app.ActionBarDrawerToggle mDrawerToggle;
-
+    View relativeLayout_drawer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_main);
+        relativeLayout_drawer = findViewById(R.id.relativeLayout_drawer);
+        imageView_background = (ImageView)findViewById(R.id.imageView_background);
+        Glide.with(this).load(R.drawable.mainicon_back_01).centerCrop().into(imageView_background);
         mTitle = mDrawerTitle = getTitle();
         mNavigationDrawerItemTitles= getResources().getStringArray(R.array.navigation_drawer_items_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -43,6 +50,7 @@ public class HomeActivity extends AppCompatActivity {
         drawerItem[2] = new DataModel("공지사항");
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         DrawerItemCustomAdapter adapter = new DrawerItemCustomAdapter(this, R.layout.list_view_item_row, drawerItem);
         mDrawerList.setAdapter(adapter);
@@ -89,7 +97,7 @@ public class HomeActivity extends AppCompatActivity {
             mDrawerList.setItemChecked(position, true);
             mDrawerList.setSelection(position);
             setTitle(mNavigationDrawerItemTitles[position]);
-            mDrawerLayout.closeDrawer(mDrawerList);
+            mDrawerLayout.closeDrawer(relativeLayout_drawer);
 
         } else {
             Log.e("MainActivity", "Error in creating fragment");
