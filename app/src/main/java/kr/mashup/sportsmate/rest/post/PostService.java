@@ -8,6 +8,7 @@ import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 /**
@@ -18,6 +19,10 @@ public interface PostService {
 
     @POST("post")
     Call<PostModel> post(@Body PostCommand command);
+
+
+    @GET("post/{postId}")
+    Call<PostModel> getPost(@Path("postId") int postId);
 
 
     @GET("post")
