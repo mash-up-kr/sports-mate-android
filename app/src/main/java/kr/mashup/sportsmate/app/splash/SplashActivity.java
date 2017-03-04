@@ -18,9 +18,9 @@ public class SplashActivity extends CyclerActivity {
         setContentView(R.layout.splash_main);
 
         if (UserManager.getInstance().isSigned()) {
-            startSignActivity();
-        } else {
             startHomeActivity();
+        } else {
+            startSignActivity();
         }
     }
 

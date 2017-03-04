@@ -15,6 +15,10 @@ public class RegionModel {
     @SerializedName("address")
     private String address;
 
+    public RegionModel(int id, String address) {
+        this.id = id;
+        this.address = address;
+    }
 
     public int getId() {
         return id;
