@@ -29,22 +29,30 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.1.1'
     testCompile 'junit:junit:4.12'
 
+
     // google map
     compile 'com.google.android.gms:play-services-maps:10.0.1'
+
 
     // fcm
     compile 'com.google.firebase:firebase-messaging:10.0.1'
 
+
     // initial configure project
     compile 'com.github.bigstark:android-cycler:1.2'
+
 
     // http client library
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
 
     // UI Dependency Injector
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
+
 
     // Hawk ( instead of SharedPreference )
     compile 'com.orhanobut:hawk:2.0.1'
