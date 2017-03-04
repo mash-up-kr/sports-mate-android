@@ -1,4 +1,4 @@
-package kr.mashup.sportsmate.app.home;
+package kr.mashup.sportsmate.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,15 +11,15 @@ import kr.mashup.sportsmate.R;
 /**
  * Created by anupamchugh on 10/12/15.
  */
-public class FixturesFragment extends Fragment {
+public class TableFragment extends Fragment {
 
-    public FixturesFragment() {
+    public TableFragment() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_fixtures, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_table, container, false);
 
         return rootView;
     }

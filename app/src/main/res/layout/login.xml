@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="kr.mashup.sportsmate.app.sign.LoginActivity">
+
+    <ImageView
+        android:layout_width="280px"
+        android:layout_height="314px"
+        android:layout_weight="1.2"
+        android:src="@drawable/login_logo"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:background="#3559AD">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72px"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="19.6dp"
+            android:text="같이 운동할 친구 없나?"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="11.3dp"
+            android:text="새로운 운동 친구와"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="14.6dp"
+            android:textColor="#ffffff"
+            android:text="멋진 팀을 만들고 싶다면"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:text="가까운 동네, 건강한 사람들의 친구 찾기!"/>
+
+    </LinearLayout>
+</LinearLayout>

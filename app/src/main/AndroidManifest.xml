@@ -9,7 +9,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".app.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".app.home.HomeActivity">
             <intent-filter>
                 <action android:name="kr.mashup.sportsmate.HomeActivity" />
@@ -25,7 +23,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".app.sign.SignInActivity">
             <intent-filter>
                 <action android:name="kr.mashup.sportsmate.SignInActivity" />
@@ -33,7 +30,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".app.sign.SignUpActivity">
             <intent-filter>
                 <action android:name="kr.mashup.sportsmate.SignUpActivity" />
@@ -41,7 +37,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".app.sign.LoginActivity">
+            <intent-filter>
+                <action android:name="kr.mashup.sportsmate.LoginActivity" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

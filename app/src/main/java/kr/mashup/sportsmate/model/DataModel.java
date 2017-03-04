@@ -1,4 +1,4 @@
-package kr.mashup.sportsmate.app.home;
+package kr.mashup.sportsmate.model;
 
 /**
  * Created by anupamchugh on 10/12/15.

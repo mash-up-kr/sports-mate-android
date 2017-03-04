@@ -57,39 +57,40 @@ public class SignInActivity extends CyclerActivity {
     };
 
     private void signIn() {
-        String email = userEmail.getText().toString();
-        String password = userPassword.getText().toString();
-
-        View focusView = null;
-        boolean cancel = false;
-
-        // Check for a valid password, if the user entered one.
-        if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
-            userPassword.setError("The password is too short!!!");
-            focusView = userPassword;
-            cancel = true;
-        }
-
-        // Check for a valid email address.
-        if (TextUtils.isEmpty(email)) {
-            userEmail.setError("This field is required!!!");
-            focusView = userEmail;
-            cancel = true;
-        } else if (!isEmailValid(email)) {
-            userEmail.setError("This email address is invalid!!!");
-            focusView = userEmail;
-            cancel = true;
-        }
-
-        if (cancel) {
-            // There was an error; don't attempt login and focus the first
-            // form field with an error.
-            focusView.requestFocus();
-        } else {
-            // Show a progress spinner, and kick off a background task to
-            // perform the user login attempt.
-            attemptLogin(email, password);
-        }
+        startActivity(new Intent(SignInActivity.this, HomeActivity.class));
+//        String email = userEmail.getText().toString();
+//        String password = userPassword.getText().toString();
+//
+//        View focusView = null;
+//        boolean cancel = false;
+//
+//        // Check for a valid password, if the user entered one.
+//        if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
+//            userPassword.setError("The password is too short!!!");
+//            focusView = userPassword;
+//            cancel = true;
+//        }
+//
+//        // Check for a valid email address.
+//        if (TextUtils.isEmpty(email)) {
+//            userEmail.setError("This field is required!!!");
+//            focusView = userEmail;
+//            cancel = true;
+//        } else if (!isEmailValid(email)) {
+//            userEmail.setError("This email address is invalid!!!");
+//            focusView = userEmail;
+//            cancel = true;
+//        }
+//
+//        if (cancel) {
+//            // There was an error; don't attempt login and focus the first
+//            // form field with an error.
+//            focusView.requestFocus();
+//        } else {
+//            // Show a progress spinner, and kick off a background task to
+//            // perform the user login attempt.
+//            attemptLogin(email, password);
+//        }
     }
 
     private void signUp() {

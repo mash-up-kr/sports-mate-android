@@ -2,30 +2,30 @@ package kr.mashup.sportsmate.app.home;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.widget.TextView;
-
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.bigstark.cycler.CyclerActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import kr.mashup.sportsmate.R;
+import kr.mashup.sportsmate.adapter.DrawerItemCustomAdapter;
+import kr.mashup.sportsmate.fragment.ConnectFragment;
+import kr.mashup.sportsmate.fragment.FixturesFragment;
+import kr.mashup.sportsmate.fragment.TableFragment;
+import kr.mashup.sportsmate.model.DataModel;
 
 
 public class HomeActivity extends CyclerActivity {
-    @BindView(R.id.home)
-    TextView home;
     private String[] mNavigationDrawerItemTitles;
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
@@ -35,12 +35,11 @@ public class HomeActivity extends CyclerActivity {
     android.support.v7.app.ActionBarDrawerToggle mDrawerToggle;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_main);
         setUnbinder(ButterKnife.bind(this));
 
-        home.setText("home");
         mTitle = mDrawerTitle = getTitle();
         mNavigationDrawerItemTitles= getResources().getStringArray(R.array.navigation_drawer_items_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);

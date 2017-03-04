@@ -1,4 +1,4 @@
-package kr.mashup.sportsmate.app.home;
+package kr.mashup.sportsmate.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import kr.mashup.sportsmate.R;
+import kr.mashup.sportsmate.model.DataModel;
 
 /**
  * Created by anupamchugh on 10/12/15.

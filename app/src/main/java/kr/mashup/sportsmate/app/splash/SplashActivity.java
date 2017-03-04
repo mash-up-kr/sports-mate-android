@@ -27,7 +27,7 @@ public class SplashActivity extends CyclerActivity {
 
     @OnUi(delay = 1000)
     private void startSignActivity() {
-        Intent intent = new Intent(Defines.INTENT_SIGN_IN_ACTIVITY);
+        Intent intent = new Intent(Defines.INTENT_LOGIN_ACTIVITY);
         startActivity(intent);
     }
 
